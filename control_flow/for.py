@@ -75,3 +75,16 @@ drinks = ['coffee', 'tea', 'beer']
 
 for day, fruit, drink in zip(days, fruits, drinks):
     print(day, fruit, drink)
+
+
+# 辞書とfor文
+d = {'x': 100, 'y': 200}
+for k, v in d.items():
+    print(k, ':', v)
+
+# 仕組み
+print(d.items()) # dict_items([('x', 100), ('y', 200)])
+# リストの中身がタプルになっている
+# アンパッキングを行い、keyとvalueの要素を変数に入れている
+# ↓
+# k, v = ('x', 100)
