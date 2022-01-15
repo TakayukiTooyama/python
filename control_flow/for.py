@@ -24,3 +24,15 @@ for word in ['My', 'name', 'is', 'Mike']:
     print(word)
 # =>
 # My
+
+
+# for else文
+for fruit in ['apple', 'banana', 'orange']:
+    print(fruit)
+else:
+    print('I ate all')
+# =>
+# apple
+# banana
+# orange
+# I ate all
