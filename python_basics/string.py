@@ -39,3 +39,22 @@ print('py''thon') # python
 s = ('aaaaaaaaaaa'
     'bbbbbbbbbbbb')
 print(s) # aaaaaaaaaaabbbbbbbbbbbb
+
+# インデックスとslice
+word = 'python'
+print(word[0]) # p
+print(word[1]) # y
+print(word[-1]) # n
+print(word[2:5]) # tho
+print(word[:2]) # py
+print(word[2:]) # thon
+
+# ⭐️書き換え
+word = 'j' + word[1:] # jython
+
+# ⭐️コピー
+print(word[:]) # jython
+
+# ⭐️インデックスの長さ
+n = len(word)
+print(n) # 6
