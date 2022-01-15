@@ -70,3 +70,8 @@ print(f'a is {z} {y} {x}')
 name = 'Takayuki'
 family = 'Tooyama'
 print(f'My name is {name} {family}. Watashi ha {family} {name}')
+
+# str型に変換
+print(str(1), type(str(1))) # 1<class 'str'>
+print(str(3.14), type(str(3.14)))# 3.14<class 'str'>
+print(str(True), type(str(True))) # True<class 'str'>
