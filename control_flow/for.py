@@ -64,3 +64,14 @@ for i, fruit in enumerate(['apple', 'banana', 'orange']):
 # 0 apple
 # 1 banana
 # 2 orange
+
+
+# ⭐️zip関数
+# 同時に複数のリストを使いたい時
+# いちいちインデックスを書かなくてい
+days = ['Mon', 'Tue', 'Wed']
+fruits = ['apple', 'banana', 'orange']
+drinks = ['coffee', 'tea', 'beer']
+
+for day, fruit, drink in zip(days, fruits, drinks):
+    print(day, fruit, drink)
