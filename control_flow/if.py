@@ -43,3 +43,13 @@ if not is_ok:
     print('False') # False
 else:
     print('True')
+
+
+# ⭐️値が入っていない判定
+# リストに値が入っていない時の条件分岐
+# False, 0, 0.0, '', [], (), {}, set()
+lists = []
+if lists:
+    print('Yes!')
+else:
+    print('No!')
