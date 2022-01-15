@@ -1,4 +1,7 @@
 # 辞書型
+from re import X
+
+
 d = {'x': 10, 'y': 20}
 print(d, type(d)) # {'x': 10, 'y': 20} <class 'dict'>
 d2 = dict(a=10, b=20)
@@ -42,3 +45,18 @@ print(d3) # {}
 # キーがあるかどうか確かめる（in）
 print('p' in d4) # True
 print('j' in d4) # False
+
+
+# 辞書コピー（参照渡し）
+x = {'a': 1}
+y = x
+y['a'] = 1000
+print(x) # {'a': 1000}
+print(y) # {'a': 1000}
+
+# 避け方
+x = {'a': 1}
+y = x.copy()
+y['a'] = 1000
+print(x) # {'a': 1}
+print(y) # {'a': 1000}
