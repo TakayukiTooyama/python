@@ -32,3 +32,16 @@ b = 20
 print(a, b) # 10 20
 a, b = b, a
 print(a, b) # 20 10
+
+
+# 使い所
+# 間違えて書き換えたくない時
+chose_from_two = ('A', 'B', 'C')
+
+answer = []
+# エラーが起こってくれる
+# chose_from_two.append('A')
+# chose_from_two.append('C')
+answer.append('A')
+answer.append('C')
+print(answer) # ['A', 'C']
