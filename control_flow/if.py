@@ -53,3 +53,17 @@ if lists:
     print('Yes!')
 else:
     print('No!')
+
+
+# ⭐️Noneの判定
+is_empty = None
+
+if is_empty is None:
+    print('None!!') # None
+if is_empty is not None:
+    print('None!!')
+
+# isとは「オブジェクト同士が同じもの」にTrueを返す
+print(1 == True) # True
+print(1 is True) # False
+print(None is None) # True
