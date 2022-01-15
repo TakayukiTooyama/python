@@ -29,3 +29,13 @@ print("##############")
 # line2
 # line3
 # ##############
+
+# 文字列連結
+print('Hi' * 3 + 'Mike') # HiHiHiMike
+print('py' + 'thon') # python
+print('py''thon') # python
+
+# ⭐️長い文章の時に''''を使う
+s = ('aaaaaaaaaaa'
+    'bbbbbbbbbbbb')
+print(s) # aaaaaaaaaaabbbbbbbbbbbb
