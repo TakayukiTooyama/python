@@ -55,3 +55,12 @@ for _ in range(5):
 # hello
 # hello
 # hello
+
+
+# ⭐️enumerate関数
+# インデックスの番号を振りたい場合
+for i, fruit in enumerate(['apple', 'banana', 'orange']):
+    print(i, fruit)
+# 0 apple
+# 1 banana
+# 2 orange
