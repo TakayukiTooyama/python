@@ -36,3 +36,22 @@ else:
 # banana
 # orange
 # I ate all
+
+
+# ⭐️range関数
+# range(始める数字, 終わる数字, 間隔)
+for i in range(1, 7, 2):
+    print(i)
+# =>
+# 1
+# 3
+# 5
+
+# ⭐️回したいだけの時（_を使う）
+for _ in range(5):
+    print('hello')
+# hello
+# hello
+# hello
+# hello
+# hello
