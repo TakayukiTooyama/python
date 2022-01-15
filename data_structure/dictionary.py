@@ -1,7 +1,4 @@
 # 辞書型
-from re import X
-
-
 d = {'x': 10, 'y': 20}
 print(d, type(d)) # {'x': 10, 'y': 20} <class 'dict'>
 d2 = dict(a=10, b=20)
@@ -60,3 +57,14 @@ y = x.copy()
 y['a'] = 1000
 print(x) # {'a': 1}
 print(y) # {'a': 1000}
+
+
+# 使い所
+# キーで何かを検索してすぐに値を取ってきたい時に使う
+# 辞書はハッシュテーブルを用いているので早い
+fruits = {
+    'apple': 100,
+    'banana': 200,
+    'arange' : 300,
+}
+print('りんごの値段は', fruits['apple'], '円です')
