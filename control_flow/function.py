@@ -86,3 +86,22 @@ def say_something(word, *args):
         # Nance
 
 say_something('Hi', 'Mike', 'Nance')
+
+
+# キーワード引数の辞書化
+def menu(**kwargs):
+    print(kwargs) # {'entree': 'chiken', 'dessert': 'ice'}
+    for k, v in kwargs.items():
+        print(k, v)
+        # entree chiken
+        # dessert ice
+
+# パターン①
+menu(entree='chiken', dessert='ice')
+
+# パターン②
+d = {
+    'entree': 'chiken',
+    'dessert': 'ice'
+}
+menu(**d)
