@@ -16,3 +16,16 @@ print(r) # [2, 4]
 # リスト内包表記でもかけるがコードが読みづらくなってしまう
 # r = [i * j for i in t for j in t2]
 # print(r)
+
+
+# 辞書内包表記
+w = ['mon', 'tue', 'wed']
+f = ['coffee', 'milk', 'water']
+
+d = {}
+for x, y in zip(w, f):
+    d[x] = y
+print(d) # {'mon': 'coffee', 'tue': 'milk', 'wed': 'water'}
+
+d = {x: y for x, y in zip(w, f)}
+print(d) # {'mon': 'coffee', 'tue': 'milk', 'wed': 'water'}
