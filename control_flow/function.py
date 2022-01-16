@@ -177,3 +177,28 @@ def change_words(words, func):
 #     return word.capitalize()
 change_words(l, lambda word: word.capitalize())
 change_words(l, lambda word: word.lower())
+
+
+# ジェネレーター
+# ・反復処理をするときに1要素取り出してそれを生成していく
+# ・nextを使って呼び出すことができ、毎回関数を抜ける
+# ・returnはない
+# ・yieldがあるとその関数はジェネレーターとして判断される
+
+def greeting():
+    yield 'Good morning'
+    yield 'Good afternoon'
+    yield 'Good night'
+
+g = greeting()
+print(next(g))
+print('###########')
+print(next(g))
+print('###########')
+print(next(g))
+# =>
+# Good morning
+# ###########
+# Good afternoon
+# ###########
+# Good night
