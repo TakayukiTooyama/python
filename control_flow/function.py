@@ -105,3 +105,16 @@ d = {
     'dessert': 'ice'
 }
 menu(**d)
+
+
+# 関数内関数
+# outer関数内だけで使うものを定義
+def outer(a, b):
+
+    def plus(c, d):
+        return c + d
+
+    r = plus(a, b)
+    print(r)
+
+outer(1, 2)
