@@ -74,3 +74,15 @@ r = test_func(100)
 print(r) # [100]
 r = test_func(100)
 print(r) # [100]
+
+
+# 位置引数のタプル化（位置引数と併用可）
+def say_something(word, *args):
+    print(word) # 'Hi'
+    print(args) # ('Mike', 'Nance')
+    for arg in args:
+        print(arg)
+        # Mike
+        # Nance
+
+say_something('Hi', 'Mike', 'Nance')
