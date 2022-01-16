@@ -1,4 +1,7 @@
 # 関数定義
+from ast import List
+
+
 def say_something():
     print('実行')
 
@@ -160,3 +163,17 @@ def add_num(a, b):
 
 r = add_num(10, 20)
 print(r)
+
+
+# ラムダ（lambda）
+# 単純な2行くらいの関数はlambdaを使って書ける！
+l = ['Mon', 'tue', 'wed', 'Thu', 'fri', 'Sat', 'sun']
+
+def change_words(words, func):
+    for word in words:
+        print(func(word))
+
+# def sample_func(word):
+#     return word.capitalize()
+change_words(l, lambda word: word.capitalize())
+change_words(l, lambda word: word.lower())
