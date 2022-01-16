@@ -115,6 +115,20 @@ def outer(a, b):
         return c + d
 
     r = plus(a, b)
-    print(r)
+    print(r) # 3
 
 outer(1, 2)
+
+
+# クロージャー
+# 初めに設定した引数をもとに後々用途によって使い分けたい時に使う
+def circle_area_func(pi):
+    def circle_area(radius):
+        return pi * radius * radius
+    return circle_area
+
+cal1 = circle_area_func(3.14)
+cal2 = circle_area_func(3.141592)
+
+print(cal1(10)) # 314.0
+print(cal2(10)) # 314.1592
