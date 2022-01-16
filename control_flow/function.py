@@ -35,3 +35,42 @@ result1 = what_is_this('red')
 result2 = what_is_this('green')
 print(result1) # tomato
 print(result2) # green pepper
+
+
+def menu(entree='chcken', drink='beer', dessert='ice'):
+    print('entree', entree)
+    print('drink', drink)
+    print('dessert', dessert)
+
+# 位置引数
+menu('beef', 'beer', 'ice')
+
+# キーワード引数
+menu(entree='beef', drink='beer', dessert='ice')
+
+# 位置引数とキーワード引数を混ぜることも可能
+menu('beef', drink='beer', dessert='ice')
+
+# デフォルト引数
+menu()
+
+# ⭐️デフォルト引数の注意点
+# リストや辞書をデフォルト引数に渡すと参照渡しになってしまうため使わない
+def test_func(x, l=[]):
+    l.append(x)
+    return l
+r = test_func(100)
+print(r) # [100]
+r = test_func(100)
+print(r) # [100, 100]
+
+# ⭐️関数内でリストが使いたい場合
+def test_func(x, l=None):
+    if l is None:
+        l = []
+    l.append(x)
+    return l
+r = test_func(100)
+print(r) # [100]
+r = test_func(100)
+print(r) # [100]
