@@ -29,3 +29,14 @@ print(d) # {'mon': 'coffee', 'tue': 'milk', 'wed': 'water'}
 
 d = {x: y for x, y in zip(w, f)}
 print(d) # {'mon': 'coffee', 'tue': 'milk', 'wed': 'water'}
+
+
+# 集合内包表記
+s = {i for i in range(10) if i % 2 == 0}
+print(s) # {0, 2, 4, 6, 8}
+
+# s = set()
+# for i in range(10):
+#     if i % 2 == 0:
+#         s.add(i)
+# print(s) # {0, 2, 4, 6, 8}
