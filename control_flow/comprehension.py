@@ -40,3 +40,19 @@ print(s) # {0, 2, 4, 6, 8}
 #     if i % 2 == 0:
 #         s.add(i)
 # print(s) # {0, 2, 4, 6, 8}
+
+
+# ジェネレーター内包表記
+g = (i for i in range(10)) # ジェネレーター
+t = tuple(i for i in range(10)) # タプル
+
+print(type(g)) # <class 'generator'>
+print(type(t)) # <class 'tuple'>
+print(next(g)) # 0
+
+# def g():
+#     for i in range(10):
+#         yield i
+
+# g = g()
+# print(type(g)) # <class 'generator'>
